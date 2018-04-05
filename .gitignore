@@ -1,0 +1,9 @@
+*.log
+*.bak
+.hooks
+.idea/
+*.txt
+*.map
+node_modules/
+dist/
+.vscode
