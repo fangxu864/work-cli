@@ -32,7 +32,6 @@ function getEntryFilename() {
     var curName = '';
     nameArr.forEach(function (item) {
         var curPath = resolve(curCompilePath) + item;
-        console.log(curPath);
         if (fsExistsSync(curPath)) {
 
             curName = curPath
@@ -41,7 +40,6 @@ function getEntryFilename() {
     if (!curName) {
         throw new Error("没有找到入口文件");
     }
-    console.log(curName);
     return curName;
 }
 
