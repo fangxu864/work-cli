@@ -52,9 +52,9 @@ function getOutputFilename(jsOrCss) {
     //找到配置文件
     let buildConfig = require(resolve(curCompilePath) + "build.config.js");
     if (jsOrCss === "css") {
-        return buildConfig.outputFilename + "all.css";
+        return buildConfig.outputFilename + ".all.css";
     } else {
-        return buildConfig.outputFilename + "all.js";
+        return buildConfig.outputFilename + ".all.js";
     }
 }
 
