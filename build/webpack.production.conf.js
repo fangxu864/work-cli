@@ -24,7 +24,12 @@ const devConf = {
         new ExtractTextPlugin({
             filename: util.getOutputFilename("css")
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            'vue': 'vue/dist/vue.js'
+        }
+    }
 
 }
 
